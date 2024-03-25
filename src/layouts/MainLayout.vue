@@ -36,6 +36,7 @@
 
     <q-page-container>
       <ChatComponent />
+      <ToolsItComponent />
       <router-view />
     </q-page-container>
   </q-layout>
@@ -46,6 +47,7 @@ import { defineComponent, ref } from "vue";
 import EssentialLink from "components/EssentialLink.vue";
 
 import ChatComponent from "components/ChatComponent.vue"; 
+import ToolsItComponent from "components/ToolsItComponent.vue"; 
 
 const linksList = [
   {
@@ -62,6 +64,7 @@ export default defineComponent({
   components: {
     EssentialLink,    
     ChatComponent,    
+    ToolsItComponent,
   },
 
   setup() {

@@ -59,6 +59,14 @@ module.exports = configure(function (/* ctx */) {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node20'
       },
+      chainWebpack(chain) {
+        chain.module
+          .rule('scss')
+          .oneOf('normal')
+          .use('sass-loader')
+          .loader('sass-loader')
+          .tap((options) => ({ ...options, sourceMap: true })) // Opciones adicionales si las necesitas
+      },
 
       vueRouterMode: 'hash', // available values: 'hash', 'history'
       // vueRouterBase,
