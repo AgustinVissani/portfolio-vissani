@@ -1,6 +1,6 @@
 <template>
   <div class="q-pa-md row justify-center">
-    <div style="width: 100%; max-width: 400px">
+    <div class="col-lg-8 col-md-6 col-sm-12">
       <q-chat-message
         name="Agustín Vissani"
         avatar="https://lh3.googleusercontent.com/a/ACg8ocKkrIKOgNGiFBxRMM4ps8hS7DYNXyCdxK6J6jH0ROAocg=s288-c-no"

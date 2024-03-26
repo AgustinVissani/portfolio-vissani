@@ -1,6 +1,5 @@
 <template>
-  <div class="q-pa-md example-row-equal-width black-bg">
-    <!-- Utiliza la propiedad computada category para el título -->
+  <div class="q-pa-xl example-row-equal-width center-container">
     <div v-for="(categoryTools, category) in groupedTools" :key="category">
       <h5>{{ category }}</h5>
       <div class="row">
@@ -208,7 +207,6 @@ export default {
 .col {
   flex: 1 0 25%;
   max-width: 25%;
-  padding: 5px;
 }
 
 .custom-image-size {
