@@ -20,7 +20,8 @@ module.exports = configure(function (/* ctx */) {
       // exclude: [],
       // rawOptions: {},
       warnings: true,
-      errors: true
+      errors: true,
+      publicPath: process.env.NODE_ENV === 'production' ? '/portfolio-vissani/' : '/'
     },
 
     // https://v2.quasar.dev/quasar-cli-vite/prefetch-feature
@@ -55,6 +56,7 @@ module.exports = configure(function (/* ctx */) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#build
     build: {
+      distDir: 'docs',
       target: {
         browser: [ 'es2019', 'edge88', 'firefox78', 'chrome87', 'safari13.1' ],
         node: 'node20'

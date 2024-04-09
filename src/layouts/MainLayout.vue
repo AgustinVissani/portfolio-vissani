@@ -66,6 +66,12 @@ const linksList = [
     icon: "code",
     link: "https://github.com/AgustinVissani",
   },
+  {
+    title: "LinkedIn",
+    caption: "linkedin.com/agustín-vissani",
+    icon: "link",
+    link: "https://www.linkedin.com/in/agust%C3%ADn-vissani/",
+  },
 ];
 
 export default defineComponent({
